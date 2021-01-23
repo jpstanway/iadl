@@ -1,13 +1,20 @@
+import { ThemeProvider, CssBaseline } from '@material-ui/core';
+import theme from './styles/globals';
+
 import Navbar from './components/Navbar';
 import Header from './components/Header';
-import './App.css';
+import About from './components/About';
+import Services from './components/Services';
 
 function App() {
   return (
-    <div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
       <Navbar />
       <Header />
-    </div>
+      <About />
+      <Services />
+    </ThemeProvider>
   );
 }
 
