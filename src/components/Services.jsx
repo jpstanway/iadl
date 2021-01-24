@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) =>
     container: {
       backgroundColor: "#f9f9f9",
       paddingTop: "30px",
-      paddingBottom: "20px"
+      paddingBottom: "50px"
     },
     heading: {
       textAlign: "center"
