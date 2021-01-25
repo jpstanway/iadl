@@ -4,15 +4,18 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 
-import logo from '../assets/iadl-logo.PNG';
+import logo from '../assets/iadl-logo.png';
 
 const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
       flexGrow: 1
     },
+    logo: {
+      height: "100px"
+    },
     bar: {
-      backgroundColor: "#F7F9F9"
+      backgroundColor: "#fff"
     },
     title: {
       flexGrow: 1,
@@ -35,7 +38,7 @@ const Navbar = () => {
       <AppBar position="static" className={classes.bar}>
         <Toolbar>
           <div className={classes.title}>
-            <img src={logo} alt="iadl-logo" />
+            <img className={classes.logo} src={logo} alt="iadl-logo" />
           </div>
           <div className={classes.menu}>
             <Button color="inherit" className={classes.link}>About</Button>

@@ -4,23 +4,36 @@ import { createStyles, makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) =>
   createStyles({
+    theme,
     container: {
       backgroundColor: "#f9f9f9",
       paddingTop: "30px",
       paddingBottom: "50px"
     },
     heading: {
+      marginBottom: "50px",
       textAlign: "center"
+    },
+    headingText: {
+      borderBottom: "2px solid #8DB324",
+      paddingBottom: "5px"
     },
     services: {
       display: "flex",
       justifyContent: "center"
     },
     card: {
-      padding: "10px",
-      textAlign: "center"
+      padding: "20px",
+      textAlign: "center",
+      transition: "all 0.5s",
+      '&:hover': {
+        border: "1.5px solid rgba(0, 0, 0, 0.10)",
+        transform: "scale(1.1)"
+      }
     },
-    theme
+    special: {
+      marginTop: "20px"
+    }
   }),
 );
 
@@ -30,7 +43,11 @@ const Services = () => {
   return (
     <div className={classes.container}>
       <Container maxWidth="md">
-        <h2 className={classes.heading}>Services</h2>
+        <h2 className={classes.heading}>
+          <span className={classes.headingText}>
+            Services
+          </span>
+        </h2>
         <div className={classes.services}>
           <Paper variant="outlined" className={classes.card}>
             <h3>Full Package</h3>
@@ -43,7 +60,9 @@ const Services = () => {
               <ListItem>Toenails</ListItem>
               <ListItem>Ears plucked (optional)</ListItem>
               <ListItem>Anal glands released (optional)</ListItem>
-              <ListItem><em>Please note: I accomodate small dogs under 30 lbs only</em></ListItem>
+              <ListItem className={classes.special}>
+                <em>Please note: I accomodate small dogs under 30 lbs only</em>
+              </ListItem>
             </List>
           </Paper>
         </div>

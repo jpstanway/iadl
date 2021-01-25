@@ -31,7 +31,8 @@ const useStyles = makeStyles((theme) =>
       position: "absolute",
       top: "50%",
       left: "25%",
-      transform: "translate(-50%, -50%)"
+      transform: "translate(-50%, -50%)",
+      zIndex: "9999"
     }
   }),
 );

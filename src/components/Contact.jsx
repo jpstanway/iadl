@@ -11,6 +11,10 @@ const useStyles = makeStyles((theme) =>
       heading: {
         textAlign: "center"
       },
+      headingText: {
+        borderBottom: "2px solid #8DB324",
+        paddingBottom: "5px"
+      },
       list: {
         margin: "auto",
         width: "300px"
@@ -25,7 +29,11 @@ const Contact = () => {
   return (
     <div className={classes.container}>
       <Container maxWidth="md">
-        <h2 className={classes.heading}>Contact</h2>
+        <h2 className={classes.heading}>
+          <span className={classes.headingText}>
+            Contact
+          </span>
+        </h2>
         <List className={classes.list}>
           <ListItem><strong>Book an appointment</strong></ListItem>
           <ListItem>(778) 899-4385</ListItem>
