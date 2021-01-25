@@ -25,7 +25,7 @@ const About = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.container}>
+    <div id="about" className={classes.container}>
       <Container maxWidth="md">
         <h2 className={classes.heading}>
           <span className={classes.headingText}>

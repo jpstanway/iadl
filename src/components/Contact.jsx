@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) =>
     createStyles({
       container: {
         paddingTop: "30px",
-        paddingBottom: "20px"
+        paddingBottom: "50px"
       },
       heading: {
         textAlign: "center"
@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) =>
         paddingBottom: "5px"
       },
       list: {
+        fontSize: "18px",
         margin: "auto",
         width: "300px"
       },
@@ -27,7 +28,7 @@ const Contact = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.container}>
+    <div id="contact" className={classes.container}>
       <Container maxWidth="md">
         <h2 className={classes.heading}>
           <span className={classes.headingText}>

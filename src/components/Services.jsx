@@ -27,8 +27,8 @@ const useStyles = makeStyles((theme) =>
       textAlign: "center",
       transition: "all 0.5s",
       '&:hover': {
-        border: "1.5px solid rgba(0, 0, 0, 0.10)",
-        transform: "scale(1.1)"
+        boxShadow: "0px 0px 14px 4px rgba(0,0,0,0.1)",
+        transform: "scale(1.05)"
       }
     },
     special: {
@@ -41,7 +41,7 @@ const Services = () => {
   const classes = useStyles();
   
   return (
-    <div className={classes.container}>
+    <div id="services" className={classes.container}>
       <Container maxWidth="md">
         <h2 className={classes.heading}>
           <span className={classes.headingText}>

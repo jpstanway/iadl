@@ -25,7 +25,16 @@ const useStyles = makeStyles((theme) =>
       display: "flex",
     },
     link: {
-      marginRight: "20px"
+      marginRight: "20px",
+      '&:hover': {
+        backgroundColor: "#FF7561",
+        color: "#fff"
+      }
+    },
+    "@media screen and (max-width: 600px)": {
+      logo: {
+        height: "50px"
+      }
     }
   }),
 );
@@ -36,14 +45,16 @@ const Navbar = () => {
   return (
     <div className={classes.root}>
       <AppBar position="static" className={classes.bar}>
-        <Toolbar>
+        <Toolbar>  
           <div className={classes.title}>
-            <img className={classes.logo} src={logo} alt="iadl-logo" />
+            <a href="/">
+              <img className={classes.logo} src={logo} alt="iadl-logo" />
+            </a>
           </div>
           <div className={classes.menu}>
-            <Button color="inherit" className={classes.link}>About</Button>
-            <Button color="inherit" className={classes.link}>Services</Button>
-            <Button color="inherit" className={classes.link}>Contact</Button>
+            <Button color="inherit" className={classes.link} href="#about">About</Button>
+            <Button color="inherit" className={classes.link} href="#services">Services</Button>
+            <Button color="inherit" className={classes.link} href="#contact">Contact</Button>
           </div>
         </Toolbar>
       </AppBar>

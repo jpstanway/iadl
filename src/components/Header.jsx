@@ -4,12 +4,16 @@ import homeImage from '../assets/iadl-home.jpg';
 
 const useStyles = makeStyles((theme) =>
   createStyles({
+    container: {
+      height: "900px",
+      width: "100%"
+    },
     imageContainer: {
       backgroundImage: `url(${homeImage})`,
       backgroundPosition: "center",
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
-      height: "900px",
+      minHeight: "100%",
       width: "100%",
       position: "relative"
     },
@@ -33,7 +37,20 @@ const useStyles = makeStyles((theme) =>
       left: "25%",
       transform: "translate(-50%, -50%)",
       zIndex: "9999"
-    }
+    },
+    "@media screen and (max-width: 800px)": {
+      text: {
+        left: "50%",
+        maxWidth: "400px",
+        padding: "20px",
+        textAlign: "center"
+      }
+    },
+    "@media screen and (max-width: 400px)": {
+      text: {
+        fontSize: "32px"
+      }
+    },
   }),
 );
 
@@ -41,11 +58,13 @@ const Header = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.imageContainer}>
-      <div className={classes.overlay}></div>    
-      <h1 className={classes.text}>
-        Professional dog grooming since 2004.
-      </h1>
+    <div className={classes.container}>
+      <div className={classes.imageContainer}>
+        <div className={classes.overlay}></div>    
+        <h1 className={classes.text}>
+          Professional dog grooming since 2004.
+        </h1>
+      </div>
     </div>
   );
 };
