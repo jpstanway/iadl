@@ -4,6 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 
+import Mobile from './Mobile';
 import logo from '../assets/iadl-logo.png';
 
 const useStyles = makeStyles((theme) =>
@@ -31,10 +32,15 @@ const useStyles = makeStyles((theme) =>
         color: "#fff"
       }
     },
+    "@media screen and (max-width: 800px)": {
+      menu: {
+        display: "none"
+      },
+    },
     "@media screen and (max-width: 600px)": {
       logo: {
         height: "50px"
-      }
+      },
     }
   }),
 );
@@ -56,6 +62,7 @@ const Navbar = () => {
             <Button color="inherit" className={classes.link} href="#services">Services</Button>
             <Button color="inherit" className={classes.link} href="#contact">Contact</Button>
           </div>
+          <Mobile />
         </Toolbar>
       </AppBar>
     </div>
