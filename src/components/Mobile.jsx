@@ -7,9 +7,9 @@ const useStyles = makeStyles(() =>
   createStyles({
     container: {
       display: "none",
-      height: "40px"
     },
     button: {
+      height: "40px",
       '&:hover': {
         backgroundColor: "#FF7561",
         color: "#fff"
