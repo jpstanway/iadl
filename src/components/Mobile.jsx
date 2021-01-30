@@ -3,10 +3,11 @@ import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles((theme) =>
+const useStyles = makeStyles(() =>
   createStyles({
     container: {
-      display: "none"
+      display: "none",
+      height: "40px"
     },
     button: {
       '&:hover': {
@@ -16,6 +17,33 @@ const useStyles = makeStyles((theme) =>
     },
     menu: {
       width: "200px"
+    },
+    hamburger: {
+      backgroundColor: "#1f1f1f",
+      borderRadius: "4px",
+      height: "2px",
+      width: "40px",
+      position: "relative",
+      "&::after": {
+        content: '""',
+        backgroundColor: "#1f1f1f",
+        borderRadius: "4px",
+        height: "2px",
+        width: "40px",
+        position: "absolute",
+        left: "0",
+        top: "10px"
+      },
+      "&::before": {
+        content: '""',
+        backgroundColor: "#1f1f1f",
+        borderRadius: "4px",
+        height: "2px",
+        width: "4px",
+        position: "absolute",
+        left: "0",
+        top: "-10px"
+      }
     },
     link: {
       borderRadius: "0",
@@ -53,7 +81,7 @@ const Mobile = () => {
         aria-haspopup="true" 
         onClick={handleClick}
       >
-        Menu
+        <span className={classes.hamburger}>&nbsp;</span>
       </Button>
       <Menu
         id="simple-menu"

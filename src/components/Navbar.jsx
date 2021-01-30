@@ -7,7 +7,7 @@ import Button from '@material-ui/core/Button';
 import Mobile from './Mobile';
 import logo from '../assets/iadl-logo.png';
 
-const useStyles = makeStyles((theme) =>
+const useStyles = makeStyles(() =>
   createStyles({
     root: {
       flexGrow: 1

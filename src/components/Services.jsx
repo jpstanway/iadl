@@ -2,9 +2,8 @@ import React from 'react';
 import { Container, Paper, List, ListItem } from '@material-ui/core';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles((theme) =>
+const useStyles = makeStyles(() =>
   createStyles({
-    theme,
     container: {
       backgroundColor: "#f9f9f9",
       paddingTop: "30px",

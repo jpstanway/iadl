@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, List, ListItem } from '@material-ui/core';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles((theme) =>
+const useStyles = makeStyles(() =>
     createStyles({
       container: {
         paddingTop: "30px",
@@ -20,7 +20,6 @@ const useStyles = makeStyles((theme) =>
         margin: "auto",
         width: "300px"
       },
-      theme
     }),
 );
 
