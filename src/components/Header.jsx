@@ -48,8 +48,12 @@ const useStyles = makeStyles(() =>
     },
     "@media screen and (max-width: 400px)": {
       text: {
-        fontSize: "32px"
-      }
+        fontSize: "32px",
+        top: "15%"
+      },
+      imageContainer: {
+        backgroundPosition: "-625px 0px"
+      },
     },
   }),
 );
