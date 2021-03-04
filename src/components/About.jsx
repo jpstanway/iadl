@@ -16,7 +16,8 @@ const useStyles = makeStyles(() =>
       paddingBottom: "5px"
     },
     paragraphs: {
-      marginTop: "50px"
+      fontSize: "20px",
+      margin: "50px 0"
     }
   }),
 );
@@ -33,9 +34,15 @@ const About = () => {
           </span>
         </h2>
         <div className={classes.paragraphs}>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>
+            With 17 years of experience as a professional dog groomer, I’ve had the pleasure 
+            of working with a variety of dogs with different hairstyles and personalities. 
+           </p>
+           <p> 
+            I groom dogs in a calm, relaxing environment with no dogs waiting on the sidelines. 
+            You are welcome to come and view the grooming room, which offers easy drop-off 
+            and pick-up for your convenience.
+          </p>
         </div>
       </Container>
     </div>
